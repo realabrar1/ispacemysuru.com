@@ -80,12 +80,12 @@ export default function Home() {
     },
     {
       title: 'Sustainable Urban Planning',
-      image: '/src/images/project3.png',
+      image: '/images/project3.png',
       category: 'Urban Planning'
     },
     {
       title: 'Eco-Friendly Architecture',
-      image: '/src/images/project4.png',
+      image: '../images/project4.png',
       category: 'Sustainable'
     }
   ];
