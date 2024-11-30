@@ -42,12 +42,12 @@ export default function About() {
     },{
       name: "Narasimha Prasad M K Design cell",
       role: "B.Arch, ",
-      image: "src/images/Picture6.png",
+      image: "https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture6.png",
       description: "PG DIpl in Construction  Management."
     },{
       name: "Rajesh Kumar Jain",
       role: "B.Arch., D.Civil ",
-      image: "src/images/Picture11.png",
+      image: "https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture11.png",
       description: "Rleef Architects & Consultants Architect"
     }
   ];
