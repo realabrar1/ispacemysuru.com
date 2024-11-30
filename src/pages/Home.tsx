@@ -75,17 +75,17 @@ export default function Home() {
     },
     {
       title: 'Commercial Plaza Design',
-      image: '/images/project2.png',
+      image: 'https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/project2.png',
       category: 'Commercial'
     },
     {
       title: 'Sustainable Urban Planning',
-      image: '/images/project3.png',
+      image: 'https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/project3.png',
       category: 'Urban Planning'
     },
     {
       title: 'Eco-Friendly Architecture',
-      image: '../images/project4.png',
+      image: 'https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/project4.png',
       category: 'Sustainable'
     }
   ];
