@@ -14,7 +14,7 @@ export default function Contact() {
     e.preventDefault();
 
     // Google Form URL
-    const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLSelSA3aaZOj2Y754SDqvR6oUy7LUoRdYDdeuZJZVXTMmB1udA/formResponse';
+    const googleFormURL = 'https://docs.google.com/forms/d/e/1FAIpQLScfi6m50y3s0C2MMKAAxO0p4QOyPZitWCGbH0oEnM9_ZJ-7MA/formResponse';
 
     // Prepare the form data
     const formDataToSubmit = new FormData();
