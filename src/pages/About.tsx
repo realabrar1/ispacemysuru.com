@@ -17,37 +17,37 @@ export default function About() {
     {
       name: "Suhas H C ",
       role: "B.E, Civil, IEI",
-      image: "src\images\Picture7.png",
+      image: "src/images/Picture7.png",
       description: "Project Engineer."
     },{
       name: "Shadakshari.H.M Archispace",
       role: " B.Arch",
-      image: "src\images\Picture1.png",
+      image: "src/images/Picture1.png",
       description: "Architec."
     },{
       name: "S B Basavaraja",
       role: " B.E., MTech, MISTE, MACCE, MIE",
-      image: "src\images\Picture3.png",
+      image: "src/images/Picture3.png",
       description: " Structural Engineer "
     },{
       name: "Shiv Manju",
       role: " B.C., MTech. ",
-      image: "src\images\Picture4.png",
+      image: "src/images/Picture4.png",
       description: "Structural Engineer."
     },{
       name: "Ravi Chokkalingam",
       role: " B.E Civil, MBA, PG (HR), Dipl., Concrete Tech",
-      image: "src\images\Picture5.png",
+      image: "src/images/Picture5.png",
       description: " Certified lead auditor (Dubai), Civil Engineer,Certified Manager of Quality (USA)."
     },{
       name: "Narasimha Prasad M K Design cell",
       role: "B.Arch, ",
-      image: "src\images\Picture6.png",
+      image: "src/images/Picture6.png",
       description: "PG DIpl in Construction  Management."
     },{
       name: "Rajesh Kumar Jain",
       role: "B.Arch., D.Civil ",
-      image: "src\images\Picture11.png",
+      image: "src/images/Picture11.png",
       description: "Rleef Architects & Consultants Architect"
     }
   ];
@@ -72,7 +72,7 @@ export default function About() {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="w-48 h-48 rounded-full overflow-hidden flex-shrink-0">
               <img
-                src="src\images\founder1"
+                src="src/images/founder1"
                 alt="Ar. H E Chandrashekar"
                 className="w-full h-full object-cover"
               />
