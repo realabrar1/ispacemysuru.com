@@ -11,18 +11,18 @@ export default function About() {
     {
       name: "Girish S",
       role: "Senior Design Mentor",
-      image: "/images/Picture8.png",
+      image: "https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture8.png",
       description: " Project Manager"
     },
     {
       name: "Suhas H C ",
       role: "B.E, Civil, IEI",
-      image: "src/images/Picture7.png",
+      image: "https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture7.png",
       description: "Project Engineer."
     },{
       name: "Shadakshari.H.M Archispace",
       role: " B.Arch",
-      image: "src/images/Picture1.png",
+      image: "https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture1.png",
       description: "Architec."
     },{
       name: "S B Basavaraja",
