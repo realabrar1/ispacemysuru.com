@@ -32,12 +32,12 @@ export default function About() {
     },{
       name: "Shiv Manju",
       role: " B.C., MTech. ",
-      image: "src/images/Picture4.png",
+      image: "https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture4.png",
       description: "Structural Engineer."
     },{
       name: "Ravi Chokkalingam",
       role: " B.E Civil, MBA, PG (HR), Dipl., Concrete Tech",
-      image: "src/images/Picture5.png",
+      image: "https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture5.png",
       description: " Certified lead auditor (Dubai), Civil Engineer,Certified Manager of Quality (USA)."
     },{
       name: "Narasimha Prasad M K Design cell",
