@@ -5,13 +5,13 @@ export default function About() {
     {
       name: "Shubhashree H B",
       role: "B.Arch",
-      image: "src/images/Picture2.png",
+      image: "/images/Picture2.png",
       description: `Architect.`
     },
     {
       name: "Girish S",
       role: "Senior Design Mentor",
-      image: "src/images/Picture8.png",
+      image: "/images/Picture8.png",
       description: " Project Manager"
     },
     {
