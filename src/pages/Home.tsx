@@ -177,7 +177,7 @@ export default function Home() {
                     ))}
                   </ul>
                   <a
-                    href="/courses"
+                    href="Courses.tsx"
                     className="inline-flex items-center text-blue-600 hover:text-blue-700"
                   >
                     Learn more <ChevronRight className="h-4 w-4 ml-1" />
