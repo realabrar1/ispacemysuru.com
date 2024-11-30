@@ -70,7 +70,7 @@ export default function Home() {
   const projects = [
     {
       title: 'Modern Residential Complex',
-      image: 'https://github.com/realabrar1/ispacemysuru.com/blob/main/src/images/project1.png',
+      image: 'https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/project1.png',
       category: 'Residential'
     },
     {
