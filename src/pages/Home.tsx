@@ -75,7 +75,7 @@ export default function Home() {
     },
     {
       title: 'Commercial Plaza Design',
-      image: '/src/images/project2.png',
+      image: '/images/project2.png',
       category: 'Commercial'
     },
     {
