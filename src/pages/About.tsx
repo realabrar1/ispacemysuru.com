@@ -5,7 +5,7 @@ export default function About() {
     {
       name: "Shubhashree H B",
       role: "B.Arch",
-      image: "../images/Picture2.png",
+      image: "https://media.licdn.com/dms/image/v2/D4E03AQGk3TXMNECR-g/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1728319050921?e=1738195200&v=beta&t=6vA65TxQm2za5KaxR0sd4MKNdgSPLaprySNinGDVq9s",
       description: `Architect.`
     },
     {
