@@ -27,7 +27,7 @@ export default function About() {
     },{
       name: "S B Basavaraja",
       role: " B.E., MTech, MISTE, MACCE, MIE",
-      image: "src/images/Picture3.png",
+      image: "https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture3.png",
       description: " Structural Engineer "
     },{
       name: "Shiv Manju",
