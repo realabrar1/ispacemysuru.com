@@ -15,7 +15,7 @@ export default function Home() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const formUrl = `https://docs.google.com/forms/d/e/1FAIpQLSdCxk9_g9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9Z9/viewform?usp=pp_url&entry.1=${formData.name}&entry.2=${formData.phone}&entry.3=${formData.email}&entry.4=${formData.course}`;
+    const formUrl = `https://docs.google.com/forms/d/e/1FAIpQLScfi6m50y3s0C2MMKAAxO0p4QOyPZitWCGbH0oEnM9_ZJ-7MA/viewform?usp=pp_url&entry.370493836=${formData.name}&entry.373186431=${formData.phone}&entry.1554576967=${formData.email}&entry.2093691889=${formData.course}`;
     window.open(formUrl, '_blank');
   };
 
