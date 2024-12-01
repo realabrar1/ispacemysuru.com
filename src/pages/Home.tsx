@@ -4,6 +4,8 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import { useState } from 'react';
 import FloatingCallButton from '../components/FloatingCallButton';
+import CourseCard from '../components/CourseCard';
+import { courses } from '../data/courses';
 
 export default function Home() {
   const [formData, setFormData] = useState({
