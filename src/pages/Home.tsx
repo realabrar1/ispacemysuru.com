@@ -179,7 +179,7 @@ export default function Home() {
                     ))}
                   </ul>
                   <a
-                    href="/courses"
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSelSA3aaZOj2Y754SDqvR6oUy7LUoRdYDdeuZJZVXTMmB1udA/viewform?usp=sf_link"
                     className="inline-flex items-center text-blue-600 hover:text-blue-700"
                   >
                     Learn more <ChevronRight className="h-4 w-4 ml-1" />
