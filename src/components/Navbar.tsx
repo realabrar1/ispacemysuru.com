@@ -22,7 +22,7 @@ export default function Navbar() {
             </Link>
           </div>
           
-          <div className="flex items-center space-x-3 sm:space-x-8 text-sm sm:text-base">
+         
 <div className="flex items-center space-x-3 sm:space-x-8 text-sm sm:text-base">
   <Link 
     to="#hero" 
