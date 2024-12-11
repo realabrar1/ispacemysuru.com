@@ -227,8 +227,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Contact Form Section */}
-      <div className="py-16 bg-gray-50">
+       {/* Contact Form Section */}
+      <div id="contact" className="py-16 bg-gray-50 scroll-mt-16">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
           
