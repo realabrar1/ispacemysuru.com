@@ -191,6 +191,20 @@ export default function Home() {
         </div>
       </div> 
        
+  {/* pichart */}
+    <div class="containers">
+      
+        <div class="central-circle">I-SPACE</div>
+
+        <div class="circle internship">INTERNSHIP</div>
+        <div class="circle softwares">SOFTWARES</div>
+        <div class="circle experts">EXPERTS PRESENTATIONS</div>
+        <div class="circle visits">FIELD VISITS</div>
+        <div class="circle certification">CERTIFICATION</div>
+        <div class="circle assistance">JOB ASSISTANCE</div>
+
+
+    </div>
 
       {/* Benefits Section */}
       <div className="py-16 bg-white">
@@ -339,6 +353,72 @@ export default function Home() {
           </div>
         </div>
       </div>
+        {/* Partners Section */}
+<div className="py-16 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center mb-12 relative">
+      <span className="bg-gray-50 px-4 relative z-10">Our Partners</span>
+      <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -z-0"></div>
+    </h2>
+
+    <div className="relative overflow-hidden">
+      <div className="flex animate-scroll space-x-8">
+        {/* First set of partners */}
+        <div className="flex space-x-8 min-w-full">
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://www.uni-mysore.ac.in/assets/galleries/emblem.png" alt="Partner 1" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/L%26T.png" alt="Partner 2" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd8480T32sJquCXHfi0swaxix3sv3I5mHgKQ&s" alt="Partner 3" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxbKpQ2adknFTNFSQjePYZeXJ7hHYUtxFvzg&s" alt="Partner 4" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/17/full/1715955573-6597.jpg?im=FeatureCrop,size=(826,465)" alt="Partner 5" className="max-h-full max-w-full object-contain" />
+          </div>
+        </div>
+
+        {/* Duplicate set for seamless scrolling */}
+        <div className="flex space-x-8 min-w-full">
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnGwxXQhmSxR-J9fgbW4-_NtXcZx0gJT0_Q&s" alt="Partner 1" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="/src/images/Picture2.png" alt="Partner 2" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="/src/images/Picture3.png" alt="Partner 3" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="/src/images/Picture4.png" alt="Partner 4" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="/src/images/Picture5.png" alt="Partner 5" className="max-h-full max-w-full object-contain" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style jsx>{`
+  .animate-scroll {
+    animation: scrollLeft 20s linear infinite;
+  }
+
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+`}</style>
 
       {/* Map Section */}
       <div className="h-96 w-full">
