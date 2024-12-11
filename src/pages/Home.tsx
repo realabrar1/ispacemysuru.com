@@ -182,7 +182,7 @@ export default function Home() {
         </div>
         {/* enroll now button */}
       <div className="enroll-button-container">
-      <a href="https://your-enroll-page.com" className="enroll-button">
+      <a href="https://forms.gle/Awd4DEAusJbttvWLA" className="enroll-button">
         Enroll Now
       </a>
     </div>
