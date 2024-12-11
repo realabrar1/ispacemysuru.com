@@ -7,6 +7,8 @@ import FloatingCallButton from '../components/FloatingCallButton';
 import CourseCard from '../components/CourseCard';
 import { courses } from '../data/courses';
 import "./styles.css";
+import './EnrollNowButton.css';
+
 export default function Home() {
   const [formData, setFormData] = useState({
     name: '',
@@ -178,6 +180,12 @@ export default function Home() {
             ))}
           </div>
         </div>
+        {/* enroll now button */}
+      <div className="enroll-button-container">
+      <a href="https://your-enroll-page.com" className="enroll-button">
+        Enroll Now
+      </a>
+    </div>
       </div>
   {/* pichart */}
     <div class="containers">
