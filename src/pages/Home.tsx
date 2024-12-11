@@ -6,7 +6,7 @@ import { useState } from 'react';
 import FloatingCallButton from '../components/FloatingCallButton';
 import CourseCard from '../components/CourseCard';
 import { courses } from '../data/courses';
-
+import "./styles.css";
 export default function Home() {
   const [formData, setFormData] = useState({
     name: '',
