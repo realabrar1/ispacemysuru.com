@@ -168,36 +168,17 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Courses Section */}
-   <div id="courses" className="py-16 bg-gray-50">
+     {/* Courses Section */}
+      <div id="courses" className="py-16 bg-gray-50 scroll-mt-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Our Programs</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {courses.map((course, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src={course.image} alt={course.title} className="w-full h-48 object-cover" />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{course.title}</h3>
-                  <p className="text-gray-600 mb-4">{course.description}</p>
-                  <p className="text-blue-600 font-semibold mb-4">Duration: {course.duration}</p>
-                  <ul className="list-disc list-inside mb-4 text-gray-600">
-                    {course.features.map((feature, i) => (
-                      <li key={i}>{feature}</li>
-                    ))}
-                  </ul>
-                  <a
-                    href="https://docs.google.com/forms/d/e/1FAIpQLSelSA3aaZOj2Y754SDqvR6oUy7LUoRdYDdeuZJZVXTMmB1udA/viewform?usp=sf_link"
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700"
-                  >
-                    Learn more <ChevronRight className="h-4 w-4 ml-1" />
-                  </a>
-                </div>
-              </div>
+              <CourseCard key={index} {...course} />
             ))}
           </div>
         </div>
-      </div> 
-       
+      </div>
   {/* pichart */}
     <div class="containers">
       
