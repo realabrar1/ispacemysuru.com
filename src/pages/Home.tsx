@@ -387,18 +387,10 @@ export default function Home() {
           <div className="w-48 h-24 flex items-center justify-center">
             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnGwxXQhmSxR-J9fgbW4-_NtXcZx0gJT0_Q&s" alt="Partner 1" className="max-h-full max-w-full object-contain" />
           </div>
-          <div className="w-48 h-24 flex items-center justify-center">
-            <img src="/src/images/Picture2.png" alt="Partner 2" className="max-h-full max-w-full object-contain" />
-          </div>
-          <div className="w-48 h-24 flex items-center justify-center">
-            <img src="/src/images/Picture3.png" alt="Partner 3" className="max-h-full max-w-full object-contain" />
-          </div>
-          <div className="w-48 h-24 flex items-center justify-center">
-            <img src="/src/images/Picture4.png" alt="Partner 4" className="max-h-full max-w-full object-contain" />
-          </div>
-          <div className="w-48 h-24 flex items-center justify-center">
-            <img src="/src/images/Picture5.png" alt="Partner 5" className="max-h-full max-w-full object-contain" />
-          </div>
+          
+         
+          
+         
         </div>
       </div>
     </div>
