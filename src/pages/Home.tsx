@@ -137,9 +137,15 @@ export default function Home() {
 
       {/* Main Title */}
       <div className="text-center py-16 bg-gray-50">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          INTEGRATED SKILL PROGRAM FOR ARCHITECTS & CIVIL ENGINEERS
-        </h1>
+         <h1
+      className="text-4xl font-bold text-gray-800 mb-4"
+      style={{ fontFamily: 'Antica, serif' }}
+    >
+      INTEGRATED <br />
+      SKILL PROGRAM 
+      FOR ARCHITECTS &<br />
+      CIVIL ENGINEERS
+    </h1>
       </div>
 
       {/* About Section */}
@@ -164,7 +170,7 @@ export default function Home() {
       {/* Courses Section */}
    <div id="courses" className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Courses</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Our Programs</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {courses.map((course, index) => (
               <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
