@@ -93,7 +93,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-16" id="hero">
       {/* Hero Section */}
       <div className="relative">
         <Slider {...sliderSettings}>
