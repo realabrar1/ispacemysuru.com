@@ -12,16 +12,16 @@ interface CourseCardProps {
 
 export default function CourseCard({ title, image, description, duration, features }: CourseCardProps) {
   const teamMembers = [
-    { name: 'Syed', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e' },
-    { name: 'Shoaib', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e' },
-    { name: 'Abrar', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d' },
-    { name: 'John', image: 'https://images.unsplash.com/photo-1519345182560-3f2917c472ef' },
-    { name: 'Mike', image: 'https://images.unsplash.com/photo-1463453091185-61582044d556' },
-    { name: 'Alex', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e' },
-    { name: 'David', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d' },
-    { name: 'Sarah', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330' },
-    { name: 'Emma', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80' },
-    { name: 'Chris', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e' }
+    { name: 'Shadakshari', image: 'https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture1.png' },
+    { name: 'Basavaraja', image: 'https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture3.png' },
+    { name: 'Manju', image: 'https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture4.png' },
+    { name: 'Ravi', image: 'https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture5.png' },
+    { name: 'Narasimha', image: 'https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture6.png' },
+    { name: 'Rajesh', image: 'https://raw.githubusercontent.com/realabrar1/ispacemysuru.com/refs/heads/main/src/images/Picture11.png' },
+    // { name: 'David', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d' },
+    // { name: 'Sarah', image: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330' },
+    // { name: 'Emma', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80' },
+    // { name: 'Chris', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e' }
   ];
 
   const [startIndex, setStartIndex] = useState(0);
