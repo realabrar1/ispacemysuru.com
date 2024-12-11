@@ -118,22 +118,23 @@ export default function Home() {
               <img 
                 src={slide.image} 
                 alt={slide.title} 
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
                 <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
                 <p className="text-xl mb-8">{slide.subtitle}</p>
-                <a
-                  href="#courses"
+                <button
+                  onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
                   className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors flex items-center"
                 >
                   Know More <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
+                </button>
               </div>
             </div>
           ))}
         </Slider>
       </div>
+
 
       {/* Main Title */}
       <div className="text-center py-16 bg-gray-50">
