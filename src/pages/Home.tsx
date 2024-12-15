@@ -8,6 +8,7 @@ import CourseCard from '../components/CourseCard';
 import { courses } from '../data/courses';
 import "./styles.css";
 import './EnrollNowButton.css';
+import { courseDetails } from '../data/courseDetails';
 
 export default function Home() {
   const [formData, setFormData] = useState({
