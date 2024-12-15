@@ -15,7 +15,8 @@ export default function App() {
         <main className="flex-grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="Courses.tsx" element={<Courses />} />
+{/*             <Route path="Courses.tsx" element={<Courses />} /> */}
+            <Route path="/course/:courseId" element={<CourseDetails />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
