@@ -6,6 +6,9 @@ import { useState } from 'react';
 import FloatingCallButton from '../components/FloatingCallButton';
 import CourseCard from '../components/CourseCard';
 import { courses } from '../data/courses';
+import "./styles.css";
+import './EnrollNowButton.css';
+// import { courseDetails } from '../data/courseDetails';
 
 export default function Home() {
   const [formData, setFormData] = useState({
@@ -31,43 +34,43 @@ export default function Home() {
     autoplaySpeed: 3000,
   };
 
-  const courses = [
-    {
-      title: 'AutoCAD / ZW',
-      image: 'https://images.unsplash.com/photo-1545670723-196ed0954986',
-      description: 'Master industry-standard CAD software for precise technical drawings and 2D/3D design.',
-      duration: '4 weeks',
-      features: ['Basic to advanced drafting', '2D and 3D modeling', 'Project-based learning']
-    },
-    {
-      title: 'SketchUp',
-      image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e',
-      description: 'Learn 3D modeling and visualization for architectural designs.',
-      duration: '3 weeks',
-      features: ['3D modeling fundamentals', 'Material application', 'Scene composition']
-    },
-    {
-      title: 'Photoshop',
-      image: 'https://images.unsplash.com/photo-1561998338-13ad7883b20f',
-      description: 'Create stunning architectural visualizations and presentations.',
-      duration: '2 weeks',
-      features: ['Image editing', 'Post-processing', 'Presentation graphics']
-    },
-    {
-      title: 'Revit',
-      image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab',
-      description: 'Master Building Information Modeling (BIM) for modern construction projects.',
-      duration: '6 weeks',
-      features: ['BIM fundamentals', 'Family creation', 'Documentation']
-    },
-    {
-      title: 'Lumion',
-      image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625',
-      description: 'Create photorealistic 3D renderings and animations.',
-      duration: '3 weeks',
-      features: ['Real-time rendering', 'Material creation', 'Animation basics']
-    }
-  ];
+  // const courses = [
+  //   {
+  //     title: 'AutoCAD / ZW',
+  //     image: 'https://images.unsplash.com/photo-1545670723-196ed0954986',
+  //     description: 'Master industry-standard CAD software for precise technical drawings and 2D/3D design.',
+  //     duration: '4 weeks',
+  //     features: ['Basic to advanced drafting', '2D and 3D modeling', 'Project-based learning']
+  //   },
+  //   {
+  //     title: 'SketchUp',
+  //     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e',
+  //     description: 'Learn 3D modeling and visualization for architectural designs.',
+  //     duration: '3 weeks',
+  //     features: ['3D modeling fundamentals', 'Material application', 'Scene composition']
+  //   },
+  //   {
+  //     title: 'Photoshop',
+  //     image: 'https://images.unsplash.com/photo-1561998338-13ad7883b20f',
+  //     description: 'Create stunning architectural visualizations and presentations.',
+  //     duration: '2 weeks',
+  //     features: ['Image editing', 'Post-processing', 'Presentation graphics']
+  //   },
+  //   {
+  //     title: 'Revit',
+  //     image: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab',
+  //     description: 'Master Building Information Modeling (BIM) for modern construction projects.',
+  //     duration: '6 weeks',
+  //     features: ['BIM fundamentals', 'Family creation', 'Documentation']
+  //   },
+  //   {
+  //     title: 'Lumion',
+  //     image: 'https://images.unsplash.com/photo-1487958449943-2429e8be8625',
+  //     description: 'Create photorealistic 3D renderings and animations.',
+  //     duration: '3 weeks',
+  //     features: ['Real-time rendering', 'Material creation', 'Animation basics']
+  //   }
+  // ];
 
   const projects = [
     {
@@ -93,7 +96,7 @@ export default function Home() {
   ];
 
   return (
-    <div className="pt-16">
+    <div className="pt-16" id="hero">
       {/* Hero Section */}
       <div className="relative">
         <Slider {...sliderSettings}>
@@ -118,28 +121,35 @@ export default function Home() {
               <img 
                 src={slide.image} 
                 alt={slide.title} 
-                className="w-full h-[400px] object-cover"
+                className="w-full h-[600px] object-cover"
               />
               <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col items-center justify-center text-white">
                 <h2 className="text-4xl font-bold mb-4">{slide.title}</h2>
                 <p className="text-xl mb-8">{slide.subtitle}</p>
-                <a
-                  href="#courses"
+                <button
+                  onClick={() => document.getElementById('courses')?.scrollIntoView({ behavior: 'smooth' })}
                   className="bg-blue-600 text-white px-8 py-3 rounded-full hover:bg-blue-700 transition-colors flex items-center"
                 >
                   Know More <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
+                </button>
               </div>
             </div>
           ))}
         </Slider>
       </div>
 
+
       {/* Main Title */}
       <div className="text-center py-16 bg-gray-50">
-        <h1 className="text-4xl font-bold text-gray-800 mb-4">
-          INTEGRATED SKILL PROGRAM FOR ARCHITECTS & CIVIL ENGINEERS
-        </h1>
+         <h1
+      className="text-4xl font-bold text-gray-800 mb-4"
+      style={{ fontFamily: 'Antica, serif' }}
+    >
+      INTEGRATED <br />
+      SKILL PROGRAM 
+      FOR ARCHITECTS &<br />
+      CIVIL ENGINEERS
+    </h1>
       </div>
 
       {/* About Section */}
@@ -161,35 +171,49 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Courses Section */}
-      <div id="courses" className="py-16 bg-gray-50">
+     {/* Courses Section */}
+{/*       <div id="courses" className="py-16 bg-gray-50 scroll-mt-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12">Our Courses</h2>
+          <h2 className="text-3xl font-bold text-center mb-12">Our Programs</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {courses.map((course, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-                <img src={course.image} alt={course.title} className="w-full h-48 object-cover" />
-                <div className="p-6">
-                  <h3 className="text-xl font-bold mb-2">{course.title}</h3>
-                  <p className="text-gray-600 mb-4">{course.description}</p>
-                  <p className="text-blue-600 font-semibold mb-4">Duration: {course.duration}</p>
-                  <ul className="list-disc list-inside mb-4 text-gray-600">
-                    {course.features.map((feature, i) => (
-                      <li key={i}>{feature}</li>
-                    ))}
-                  </ul>
-                  <a
-                    href="/courses"
-                    className="inline-flex items-center text-blue-600 hover:text-blue-700"
-                  >
-                    Learn more <ChevronRight className="h-4 w-4 ml-1" />
-                  </a>
-                </div>
-              </div>
+              <CourseCard key={index} {...course} />
+            ))}
+          </div>
+        </div> */}
+{/* test */}
+       {/* Courses Section */}
+      <div id="courses" className="py-16 bg-gray-50 scroll-mt-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Programs</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {Object.values(courseDetails).map((course) => (
+              <CourseCard key={course.id} {...course} />
             ))}
           </div>
         </div>
       </div>
+                    {/* enroll now button */}
+      <div className="enroll-button-container">
+      <a href="https://forms.gle/Awd4DEAusJbttvWLA" className="enroll-button">
+        Enroll Now
+      </a>
+    </div>
+      </div>
+  {/* pichart */}
+    <div class="containers">
+      
+        <div class="central-circle">I-SPACE</div>
+
+        <div class="circle internship">INTERNSHIP</div>
+        <div class="circle softwares">SOFTWARES</div>
+        <div class="circle experts">EXPERTS PRESENTATIONS</div>
+        <div class="circle visits">FIELD VISITS</div>
+        <div class="circle certification">CERTIFICATION</div>
+        <div class="circle assistance">JOB ASSISTANCE</div>
+
+
+    </div>
 
       {/* Benefits Section */}
       <div className="py-16 bg-white">
@@ -224,8 +248,8 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Contact Form Section */}
-      <div className="py-16 bg-gray-50">
+       {/* Contact Form Section */}
+      <div id="contact" className="py-16 bg-gray-50 scroll-mt-16">
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12">Contact Us</h2>
           
@@ -338,6 +362,64 @@ export default function Home() {
           </div>
         </div>
       </div>
+        {/* Partners Section */}
+<div className="py-16 bg-gray-50">
+  <div className="max-w-7xl mx-auto px-4">
+    <h2 className="text-3xl font-bold text-center mb-12 relative">
+      <span className="bg-gray-50 px-4 relative z-10">Our Partners</span>
+      <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -z-0"></div>
+    </h2>
+
+    <div className="relative overflow-hidden">
+      <div className="flex animate-scroll space-x-8">
+        {/* First set of partners */}
+        <div className="flex space-x-8 min-w-full">
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://www.uni-mysore.ac.in/assets/galleries/emblem.png" alt="Partner 1" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/L%26T.png" alt="Partner 2" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd8480T32sJquCXHfi0swaxix3sv3I5mHgKQ&s" alt="Partner 3" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxbKpQ2adknFTNFSQjePYZeXJ7hHYUtxFvzg&s" alt="Partner 4" className="max-h-full max-w-full object-contain" />
+          </div>
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2024-05/17/full/1715955573-6597.jpg?im=FeatureCrop,size=(826,465)" alt="Partner 5" className="max-h-full max-w-full object-contain" />
+          </div>
+        </div>
+
+        {/* Duplicate set for seamless scrolling */}
+        <div className="flex space-x-8 min-w-full">
+          <div className="w-48 h-24 flex items-center justify-center">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPnGwxXQhmSxR-J9fgbW4-_NtXcZx0gJT0_Q&s" alt="Partner 1" className="max-h-full max-w-full object-contain" />
+          </div>
+          
+         
+          
+         
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style jsx>{`
+  .animate-scroll {
+    animation: scrollLeft 20s linear infinite;
+  }
+
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+`}</style>
 
       {/* Map Section */}
       <div className="h-96 w-full">
