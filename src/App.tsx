@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Courses from './pages/Courses';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import CourseDetails from './pages/CourseDetails';
 
 export default function App() {
   return (
