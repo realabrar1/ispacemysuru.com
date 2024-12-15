@@ -89,7 +89,7 @@ export default function CourseCard({ title, image, description, duration, featur
           </div>
         )}
 
-        <button
+{/*         <button
           onClick={() => {
             const coursesSection = document.getElementById('courses');
             if (coursesSection) {
@@ -99,7 +99,14 @@ export default function CourseCard({ title, image, description, duration, featur
           className="inline-flex items-center text-blue-600 hover:text-blue-700"
         >
           Learn more <ArrowRight className="h-4 w-4 ml-1" />
-        </button>
+        </button> */}
+        <Link 
+          to={`/course/${id}`}
+          className="inline-flex items-center text-blue-600 hover:text-blue-700"
+        >
+          Learn more <ArrowRight className="h-4 w-4 ml-1" />
+        </Link>
+        
       </div>
     </div>
   );
