@@ -23,6 +23,7 @@ export default function CourseCard({ title, image, description, duration, featur
     // { name: 'Emma', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80' },
     // { name: 'Chris', image: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e' }
   ];
+  
 //    return (
 //     <div className="bg-white rounded-lg shadow-lg overflow-hidden">
 //       <img src={image} alt={title} className="w-full h-48 object-cover" />
