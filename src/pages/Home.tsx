@@ -71,6 +71,16 @@ export default function Home() {
   //     features: ['Real-time rendering', 'Material creation', 'Animation basics']
   //   }
   // ];
+   {/* Courses Section */}
+      <div id="courses" className="py-16 bg-gray-50 scroll-mt-16">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold text-center mb-12">Our Programs</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {courses.map((course, index) => (
+              <CourseCard key={index} {...course} />
+            ))}
+          </div>
+        </div>
 
   const projects = [
     {
