@@ -81,6 +81,13 @@ export default function Home() {
             ))}
           </div>
         </div>
+        {/* enroll now button */}
+      <div className="enroll-button-container">
+      <a href="https://your-enroll-page.com" className="enroll-button">
+        Enroll Now
+      </a>
+    </div>
+      </div>
 
   const projects = [
     {
