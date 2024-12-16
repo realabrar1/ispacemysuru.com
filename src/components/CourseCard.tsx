@@ -5,7 +5,7 @@ import { useState, useEffect } from 'react';
 interface CourseCardProps {
   title: string;
   image: string;
-  description: strin
+  description: string;
   duration: string;
   features: string[];
 }
