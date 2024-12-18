@@ -345,41 +345,97 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Projects Section */}
-      <div className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="border-2 border-gray-200 rounded-xl p-8 shadow-lg">
-            <h2 className="text-3xl font-bold text-center mb-12 relative">
-              <span className="bg-white px-4 relative z-10">Our Projects</span>
-              <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -z-0"></div>
-            </h2>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
-              {projects.map((project, index) => (
-                <div 
-                  key={index} 
-                  className="relative group overflow-hidden rounded-lg border-2 border-gray-100 shadow-md transition-all duration-300 hover:shadow-xl hover:border-blue-200"
-                >
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
-                    <div className="text-center">
-                      <h3 className="text-white font-semibold px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                        {project.title}
-                      </h3>
-                      <p className="text-white/80 text-sm mt-2 px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
-                        {project.category}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              ))}
+      // {/* Projects Section */}
+      // <div className="py-16 bg-white">
+      //   <div className="max-w-7xl mx-auto px-4">
+      //     <div className="border-2 border-gray-200 rounded-xl p-8 shadow-lg">
+      //       <h2 className="text-3xl font-bold text-center mb-12 relative">
+      //         <span className="bg-white px-4 relative z-10">Our Projects</span>
+      //         <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -z-0"></div>
+      //       </h2>
+      //       <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+      //         {projects.map((project, index) => (
+      //           <div 
+      //             key={index} 
+      //             className="relative group overflow-hidden rounded-lg border-2 border-gray-100 shadow-md transition-all duration-300 hover:shadow-xl hover:border-blue-200"
+      //           >
+      //             <img
+      //               src={project.image}
+      //               alt={project.title}
+      //               className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
+      //             />
+      //             <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+      //               <div className="text-center">
+      //                 <h3 className="text-white font-semibold px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+      //                   {project.title}
+      //                 </h3>
+      //                 <p className="text-white/80 text-sm mt-2 px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">
+      //                   {project.category}
+      //                 </p>
+      //               </div>
+      //             </div>
+      //           </div>
+      //         ))}
+      //       </div>
+      //     </div>
+      //   </div>
+      // </div>
+  <div className="py-16 bg-white">
+  <div className="max-w-7xl mx-auto px-4">
+    <div className="border-2 border-gray-200 rounded-xl p-8 shadow-lg">
+      <h2 className="text-3xl font-bold text-center mb-12 relative">
+        <span className="bg-white px-4 relative z-10">Our Projects</span>
+        <div className="absolute top-1/2 left-0 w-full h-0.5 bg-gray-200 -z-0"></div>
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
+        {/* Project 1 */}
+        <div className="relative group overflow-hidden rounded-lg border-2 border-gray-100 shadow-md transition-all duration-300 hover:border-blue-200">
+          <img src="/src/images/project1.png" alt="Modern Residential Complex" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="text-center">
+              <h3 className="text-white font-semibold px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Modern Residential Complex</h3>
+              <p className="text-white/80 text-sm mt-2 px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Residential</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 2 */}
+        <div className="relative group overflow-hidden rounded-lg border-2 border-gray-100 shadow-md transition-all duration-300 hover:border-blue-200">
+          <img src="/src/images/project2.png" alt="Commercial Plaza Design" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="text-center">
+              <h3 className="text-white font-semibold px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Commercial Plaza Design</h3>
+              <p className="text-white/80 text-sm mt-2 px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Commercial</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 3 */}
+        <div className="relative group overflow-hidden rounded-lg border-2 border-gray-100 shadow-md transition-all duration-300 hover:border-blue-200">
+          <img src="/src/images/project3.png" alt="Sustainable Urban Planning" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="text-center">
+              <h3 className="text-white font-semibold px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Sustainable Urban Planning</h3>
+              <p className="text-white/80 text-sm mt-2 px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Urban Planning</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Project 4 */}
+        <div className="relative group overflow-hidden rounded-lg border-2 border-gray-100 shadow-md transition-all duration-300 hover:border-blue-200">
+          <img src="/src/images/project4.png" alt="Eco-Friendly Architecture" className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110" />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <div className="text-center">
+              <h3 className="text-white font-semibold px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Eco-Friendly Architecture</h3>
+              <p className="text-white/80 text-sm mt-2 px-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300">Sustainable</p>
             </div>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
         {/* Partners Section */}
 <div className="py-16 bg-gray-50">
   <div className="max-w-7xl mx-auto px-4">
